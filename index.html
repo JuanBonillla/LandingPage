@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BarberHUB</title>
+    <title>BarberHUB | Plataforma de Gestión</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,33 +15,66 @@
     <!-- Contenedor Principal (Efecto Cristal) -->
     <div class="main-wrapper">
         
+        <!-- Header -->
         <header class="header glass-panel">
             <div class="logo">Barber<span class="gold-text">HUB</span></div>
+            
             <nav class="nav" id="nav-menu">
                 <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#estadisticas" class="nav-link">Estadísticas</a>
                 <a href="#servicios" class="nav-link">Servicios</a>
                 <a href="#reservas" class="nav-link btn-nav">Agendar</a>
             </nav>
+
             <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
         </header>
 
+        <!-- Inicio / Hero -->
         <section id="inicio" class="hero">
             <div class="hero-content glass-panel tilt-card">
                 <h1 class="glitch" data-text="BarberHUB">BarberHUB</h1>
-                <!-- Efecto de máquina de escribir -->
                 <h2 class="typewriter-text">El arte de la barbería con el sello <span class="gold-text dynamic-text"></span><span class="cursor">|</span></h2>
-                <p>Sistema interactivo de reservas y gestión de estilo.</p>
+                <p>Sistema interactivo de reservas y gestión de estilo profesional.</p>
+                <br>
+                <br>
                 <a href="#reservas" class="btn-primary glow-btn">Reservar Cita</a>
             </div>
         </section>
 
+        <!-- Estadísticas de la Plataforma -->
+        <section id="estadisticas" style="padding: 3rem 5%;">
+            <div class="glass-panel" style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 2rem; padding: 3rem 2rem; border-radius: 15px; text-align: center;">
+                
+                <div class="stat-box">
+                    <i class="fas fa-store gold-text" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                    <h3 class="stat-number glitch" data-target="150" style="font-size: 3rem; margin: 0; color: #fff;">40</h3>
+                    <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Barberías Activas</p>
+                </div>
+
+                <div class="stat-box">
+                    <i class="fas fa-calendar-check gold-text" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                    <h3 class="stat-number glitch" data-target="12500" style="font-size: 3rem; margin: 0; color: #fff;">130</h3>
+                    <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Citas Gestionadas</p>
+                </div>
+
+                <div class="stat-box">
+                    <i class="fas fa-users gold-text" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                    <h3 class="stat-number glitch" data-target="4300" style="font-size: 3rem; margin: 0; color: #fff;">125</h3>
+                    <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Clientes Satisfechos</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Servicios -->
         <section id="servicios" class="services">
-            <h2 class="section-title">Servicios mas solicitados</h2>
+            <h2 class="section-title">Servicios más solicitados</h2>
             <div class="services-grid" id="services-container">
                 <!-- Se inyectan con JS -->
             </div>
         </section>
 
+        <!-- Reservas -->
         <section id="reservas" class="booking">
             <div class="booking-container glass-panel">
                 <h2>Agenda tu Espacio</h2>

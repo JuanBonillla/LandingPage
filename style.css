@@ -210,3 +210,28 @@ input:focus, select:focus {
     .glitch { font-size: 2.8rem; }
     .form-row { flex-direction: column; }
 }
+
+/* Agrupador de acciones en el Header */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+/* Versión compacta del botón para el menú superior */
+.btn-sm {
+    padding: 0.5rem 1.2rem !important;
+    font-size: 0.85rem !important;
+    border-radius: 20px !important;
+}
+
+/* Ajuste responsivo para celulares */
+@media (max-width: 768px) {
+    .header-actions {
+        margin-right: 1rem;
+    }
+    .btn-sm {
+        padding: 0.4rem 0.8rem !important;
+        font-size: 0.75rem !important;
+    }
+}
